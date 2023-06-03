@@ -14,12 +14,10 @@
     </header>
 
     <nav>
-    <ul>
-        <li><a href="index.htm">Home</a></li> 
-        <li><a href="about.htm">About Me</a></li> 
+    <ul> 
+        <li><a href="index.htm">About Me</a></li> 
         <li><a href="photography.htm">Photography</a></li> 
-        <li><a href="artwork.htm">Artwork</a></li> 
-        <li><a href="contact.htm">Contact Me</a></li>
+        <li><a href="artwork.htm">Artwork</a></li>
     </ul>
     </nav>
     
@@ -44,34 +42,58 @@
 
         <p>Ut eleifend, nulla quis mollis ullamcorper, arcu nulla placerat risus, nec gravida diam metus et arcu. Maecenas finibus enim blandit aliquet molestie. Etiam ultrices vestibulum placerat. Duis metus quam, elementum eget ligula vitae, scelerisque feugiat ante. Pellentesque fermentum nunc tellus, vel laoreet enim pellentesque et. Donec tempor lacinia efficitur. Etiam mollis tristique nisi, eu consequat quam venenatis id. Sed hendrerit congue eros, eget tincidunt nibh. Aliquam erat volutpat. Pellentesque sed libero leo. Suspendisse scelerisque pharetra rutrum. Nunc ut tincidunt lorem. Integer posuere egestas ullamcorper. Mauris sed odio ac libero luctus posuere. Aliquam ut mauris in velit laoreet elementum. Phasellus rhoncus cursus magna id dapibus.</p>
         </div>
-        <img src="images/foto1.png" alt="example of work"></div>
-    </main>
-    <section><div class="maininter2">
-    <div class="intro">
-        <h1>Like what you see?</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut risus id sapien viverra dictum quis a magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras pellentesque risus luctus purus aliquet malesuada. Proin dolor sapien, interdum eget placerat at, molestie eget nibh. Pellentesque quis ultrices quam. Ut sed enim sem. Nullam feugiat nulla in magna malesuada fringilla. Donec sed leo pretium, mattis tortor ac, pretium lacus. Aenean fringilla nisi id odio facilisis, a semper sem dictum. Nulla lorem magna, dignissim id pretium at, lobortis eu lorem. Praesent a bibendum sapien. Suspendisse fermentum viverra tincidunt. Mauris eu efficitur eros, eget mattis nisi. Praesent vehicula tortor non ultrices gravida.</p>
+<div class="imghide">
+        <img src="images/me1.jpg" id="myImg" alt="example of work" >
+</div>
 
-        <p>Proin non felis tincidunt, fermentum dolor non, rutrum ligula. Vestibulum et massa at felis dapibus iaculis. Etiam dignissim, orci vel egestas rutrum, orci est hendrerit orci, ut tincidunt urna lectus sed felis. Nulla facilisis et erat nec lobortis. Vestibulum varius nisi ac maximus fermentum. Nam sollicitudin felis felis, a pellentesque arcu porta ac. Quisque sit amet odio at quam posuere commodo in aliquet nibh.</p>
+<script>
+const myImg = document.getElementById("myImg");
 
-        <p>Aenean et turpis blandit, lobortis mauris sit amet, mattis elit. In sit amet mattis risus. Praesent aliquam mauris eu sem sagittis, id lacinia magna bibendum. Fusce dignissim scelerisque maximus. Maecenas bibendum est justo, ut iaculis nisi pharetra pulvinar. Nulla magna est, egestas vitae commodo et, posuere a est. Aenean scelerisque turpis turpis. Donec pulvinar quam nunc, vitae euismod libero pharetra ut. Integer et risus id ex interdum blandit. Proin rhoncus velit eget urna imperdiet volutpat. In nec ligula vel quam consectetur sodales at quis felis. Aliquam ultrices sem quis eros laoreet feugiat. Quisque vitae ex ac risus ornare mollis vel sed neque. Donec massa orci, sagittis id pulvinar id, viverra posuere nibh. Phasellus at odio quis lacus dignissim rhoncus eu ut quam.</p>
+let isFirstImage = true;
 
-        <p>Integer venenatis felis ut massa consectetur malesuada. In hac habitasse platea dictumst. Phasellus tempor id orci vulputate pulvinar. Suspendisse potenti. Donec volutpat metus nisl, sit amet posuere nulla luctus ut. Etiam viverra pretium tincidunt. Fusce non elit lorem. Aliquam at libero id arcu tristique vulputate.</p>
+myImg.addEventListener("click", function() {
+  if (isFirstImage) {
+    myImg.src = "images/me1.jpg";
+  } else {
+    myImg.src = "images/me2.jpg";
+  }
+  isFirstImage = !isFirstImage;
+});
+</script>
 
-        <p>Ut eleifend, nulla quis mollis ullamcorper, arcu nulla placerat risus, nec gravida diam metus et arcu. Maecenas finibus enim blandit aliquet molestie. Etiam ultrices vestibulum placerat. Duis metus quam, elementum eget ligula vitae, scelerisque feugiat ante. Pellentesque fermentum nunc tellus, vel laoreet enim pellentesque et. Donec tempor lacinia efficitur. Etiam mollis tristique nisi, eu consequat quam venenatis id. Sed hendrerit congue eros, eget tincidunt nibh. Aliquam erat volutpat. Pellentesque sed libero leo. Suspendisse scelerisque pharetra rutrum. Nunc ut tincidunt lorem. Integer posuere egestas ullamcorper. Mauris sed odio ac libero luctus posuere. Aliquam ut mauris in velit laoreet elementum. Phasellus rhoncus cursus magna id dapibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut risus id sapien viverra dictum quis a magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras pellentesque risus luctus purus aliquet malesuada. Proin dolor sapien, interdum eget placerat at, molestie eget nibh. Pellentesque quis ultrices quam. Ut sed enim sem. Nullam feugiat nulla in magna malesuada fringilla. Donec sed leo pretium, mattis tortor ac, pretium lacus. Aenean fringilla nisi id odio facilisis, a semper sem dictum. Nulla lorem magna, dignissim id pretium at, lobortis eu lorem. Praesent a bibendum sapien. Suspendisse fermentum viverra tincidunt. Mauris eu efficitur eros, eget mattis nisi. Praesent vehicula tortor non ultrices gravida.</p>
+<div class="contactbtn">
+<input type="button" class="showc" id="showc" value="Contact Me!" onclick="showDiv()" />
 
-        <p>Proin non felis tincidunt, fermentum dolor non, rutrum ligula. Vestibulum et massa at felis dapibus iaculis. Etiam dignissim, orci vel egestas rutrum, orci est hendrerit orci, ut tincidunt urna lectus sed felis. Nulla facilisis et erat nec lobortis. Vestibulum varius nisi ac maximus fermentum. Nam sollicitudin felis felis, a pellentesque arcu porta ac. Quisque sit amet odio at quam posuere commodo in aliquet nibh.</p>
+<script>
+function showDiv() {
+   document.getElementById('contactform').style.display = "block";
+}
+</script>
 
-        <p>Aenean et turpis blandit, lobortis mauris sit amet, mattis elit. In sit amet mattis risus. Praesent aliquam mauris eu sem sagittis, id lacinia magna bibendum. Fusce dignissim scelerisque maximus. Maecenas bibendum est justo, ut iaculis nisi pharetra pulvinar. Nulla magna est, egestas vitae commodo et, posuere a est. Aenean scelerisque turpis turpis. Donec pulvinar quam nunc, vitae euismod libero pharetra ut. Integer et risus id ex interdum blandit. Proin rhoncus velit eget urna imperdiet volutpat. In nec ligula vel quam consectetur sodales at quis felis. Aliquam ultrices sem quis eros laoreet feugiat. Quisque vitae ex ac risus ornare mollis vel sed neque. Donec massa orci, sagittis id pulvinar id, viverra posuere nibh. Phasellus at odio quis lacus dignissim rhoncus eu ut quam.</p>
-
-        <p>Integer venenatis felis ut massa consectetur malesuada. In hac habitasse platea dictumst. Phasellus tempor id orci vulputate pulvinar. Suspendisse potenti. Donec volutpat metus nisl, sit amet posuere nulla luctus ut. Etiam viverra pretium tincidunt. Fusce non elit lorem. Aliquam at libero id arcu tristique vulputate.</p>
-
-        <p>Ut eleifend, nulla quis mollis ullamcorper, arcu nulla placerat risus, nec gravida diam metus et arcu. Maecenas finibus enim blandit aliquet molestie. Etiam ultrices vestibulum placerat. Duis metus quam, elementum eget ligula vitae, scelerisque feugiat ante. Pellentesque fermentum nunc tellus, vel laoreet enim pellentesque et. Donec tempor lacinia efficitur. Etiam mollis tristique nisi, eu consequat quam venenatis id. Sed hendrerit congue eros, eget tincidunt nibh. Aliquam erat volutpat. Pellentesque sed libero leo. Suspendisse scelerisque pharetra rutrum. Nunc ut tincidunt lorem. Integer posuere egestas ullamcorper. Mauris sed odio ac libero luctus posuere. Aliquam ut mauris in velit laoreet elementum. Phasellus rhoncus cursus magna id dapibus.</p>
-        </div>
-        <div class="imghide"><img src="images/foto2.jpg" alt="example of work"></div></div>
-    </section>
+<div id="contactform" class="contactform">
+<form>
+<br />ALL Fields are manatory<br /><br />
+<label for="name">Contact Name</label><br />
+<input name="name" type="text" value="Contact Name" /><br /><br />
+<label for="email">Email</label><br />
+<input name="email" type="text" value="Email Address" /><br /><br />
+<label>Subject<br /></label>
+<select>
+<option selected="selected" value="1">Quote</option>
+<option selected="selected" value="2">Job</option>
+<option selected="selected" value="3">Proposal</option>
+<option selected="selected" value="4">Other</option>
+</select><br /><br />
+<label>Message</label><br />
+<textarea cols="60" rows="5">More information about your request...</textarea><br /><br />
+<button id="subbtn" type="submit" value="Submit">Submit</button>
+</form>
+</div>
+</div>
+</div>
     <footer>
         <a href="https://www.facebook.com/Ascenmedia"><img src="images/fb-logo.png"></a>
-        <a href="https://www.instagram.com/jeh.foto"><img src="images/ig-logo.png" class="ig1"></a>
+        <a href="https://www.instagram.com/jeh.foto"><img src="images/ig-logo.png"></a>
     
     <ul>
         <li><a href="faq.htm">FAQ</a></li>
