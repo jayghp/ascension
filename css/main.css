@@ -1,0 +1,149 @@
+html{
+    margin: 0;
+}
+body{  
+    background: url("../images/bgfoto.jpg") no-repeat center center fixed;
+    background-size:cover;
+    background-position:top;
+}
+header{
+    margin: -5px -0px -5px 0px;
+}
+header img{
+    width: 15%;
+    margin: auto;
+    display: block;
+    
+}
+nav{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+nav ul{
+    list-style: none; 
+    margin: 0 auto;
+    padding: 9.7px 0px;
+    background-color:#b60abf40;
+    border-radius: 5px 5px 5px 5px;
+} 
+nav li{
+    display: inline;
+}
+nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f59af0;
+    padding: 10px 20px;
+    font-family: sans-serif;
+}
+nav a:hover{
+    animation: colorchange 0.5s;
+    animation-fill-mode: forwards;
+}
+main{
+    margin-top: 10px;
+}
+.maininter{
+    width: 900px;
+    margin: auto;
+}
+section {
+    clear: both;
+   padding-top: 10px;
+}
+.maininter2{
+    width: 900px;
+    margin: auto;
+}
+section img{
+    height:  420px;
+    float: right;
+    border-radius: 0 5px 5px 0;
+}
+.imghide{
+    height: 420px;
+    width: 280px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 5px 5px 0;
+}
+.imghide img {
+}
+.intro{
+    width: 600px;
+    height: 400px;
+    overflow-y: scroll;
+    float: left;
+    background-color:#f59af020;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    
+}
+.intro h1{
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 30px;
+}
+.intro p{
+    text-decoration: none;
+}
+main img{
+    height:  420px;
+    float: right;
+    border-radius: 0 5px 5px 0;
+}
+footer{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+}
+footer img {
+    position: absolute;
+    left: 100px;
+    height: 100px;
+    opacity: 80%;
+    padding-top: 5px;
+}
+.ig1{
+    padding-left: 100px;
+}
+footer ul{
+    list-style:none;
+    margin: 0 auto;
+    padding: 45px 0px;
+    background-color:#b60abf40;
+    border-radius: 5px 5px 5px 5px;
+} 
+footer li{
+    display: inline;
+}
+footer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f59af0;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+@keyframes colorchange{
+    from{
+        background-color: #b60abf;
+        color: #f59af0;
+    }
+    to{
+        background-color: #f59af0;
+        color: #b60abf;
+    }
+    
+}
