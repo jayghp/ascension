@@ -14,8 +14,7 @@
     </header>
 
     <nav>
-    <ul> 
-        <li><a href="index.htm">About Me</a></li> 
+    <ul>  
         <li><a href="photography.htm">Photography</a></li> 
         <li><a href="artwork.htm">Artwork</a></li>
     </ul>
@@ -42,51 +41,57 @@
 
         <p>Ut eleifend, nulla quis mollis ullamcorper, arcu nulla placerat risus, nec gravida diam metus et arcu. Maecenas finibus enim blandit aliquet molestie. Etiam ultrices vestibulum placerat. Duis metus quam, elementum eget ligula vitae, scelerisque feugiat ante. Pellentesque fermentum nunc tellus, vel laoreet enim pellentesque et. Donec tempor lacinia efficitur. Etiam mollis tristique nisi, eu consequat quam venenatis id. Sed hendrerit congue eros, eget tincidunt nibh. Aliquam erat volutpat. Pellentesque sed libero leo. Suspendisse scelerisque pharetra rutrum. Nunc ut tincidunt lorem. Integer posuere egestas ullamcorper. Mauris sed odio ac libero luctus posuere. Aliquam ut mauris in velit laoreet elementum. Phasellus rhoncus cursus magna id dapibus.</p>
         </div>
-<div class="imghide">
-        <img src="images/me1.jpg" id="myImg" alt="example of work" >
+<div class="imghide" >
+        <img src="images/me2.jpg" id="myImg2" alt="example of work" onClick="showsecimg()">  
+        <img src="images/me1.jpg" id="myImg1" alt="example of work" onClick="showsecimg2()">
 </div>
 
 <script>
-const myImg = document.getElementById("myImg");
-
-let isFirstImage = true;
-
-myImg.addEventListener("click", function() {
-  if (isFirstImage) {
-    myImg.src = "images/me1.jpg";
-  } else {
-    myImg.src = "images/me2.jpg";
-  }
-  isFirstImage = !isFirstImage;
-});
+function showsecimg() {
+   document.getElementById('myImg2').style.display = "none";
+   document.getElementById('myImg1').style.display = "block";
+}
+function showsecimg2() {
+   document.getElementById('myImg2').style.display = "block";
+   document.getElementById('myImg1').style.display = "none";
+}
 </script>
 
 <div class="contactbtn">
 <input type="button" class="showc" id="showc" value="Contact Me!" onclick="showDiv()" />
+<input type="button" class="showx" id="showx" value="Cancel" onclick="hideDiv()" />
 
 <script>
 function showDiv() {
    document.getElementById('contactform').style.display = "block";
+   document.getElementById('showc').style.display = "none";
+   document.getElementById('showx').style.display = "block";
+}
+function hideDiv() {
+   document.getElementById('contactform').style.display = "none";
+   document.getElementById('showx').style.display = "none";
+   document.getElementById('showc').style.display = "block";
 }
 </script>
 
 <div id="contactform" class="contactform">
-<form>
-<br />ALL Fields are manatory<br /><br />
-<label for="name">Contact Name</label><br />
+<form method="post" name="myemailform" action="php/form-to-email.php">
+
+<br />*ALL Fields are manatory*<br /><br />
+<label for="name" minlength="3" maxlength="50" required autofocus>Contact Name</label><br />
 <input name="name" type="text" value="Contact Name" /><br /><br />
-<label for="email">Email</label><br />
+<label for="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="8" maxlength="255" required>Email</label><br />
 <input name="email" type="text" value="Email Address" /><br /><br />
 <label>Subject<br /></label>
-<select>
+<select name="selection">
 <option selected="selected" value="1">Quote</option>
 <option selected="selected" value="2">Job</option>
 <option selected="selected" value="3">Proposal</option>
 <option selected="selected" value="4">Other</option>
 </select><br /><br />
 <label>Message</label><br />
-<textarea cols="60" rows="5">More information about your request...</textarea><br /><br />
-<button id="subbtn" type="submit" value="Submit">Submit</button>
+<textarea  name="message" cols="60" rows="5" required>More information about your request...</textarea><br /><br />
+<button id="subbtn" type="submit" value="Send Form">Submit</button>
 </form>
 </div>
 </div>

@@ -16,9 +16,9 @@ header img{
     
 }
 nav{
-    width: 30%;
+    width: 17%;
     text-align: center;
-    margin: auto;
+	margin:auto;
 }
 nav ul{
     list-style: none; 
@@ -26,6 +26,7 @@ nav ul{
     padding: 9px 0px;
     background-color:#b60abf40;
     border-radius: 5px 5px 5px 5px;
+	
 } 
 nav li{
     display: inline;
@@ -34,7 +35,7 @@ nav a{
     text-decoration: none;
     text-transform: uppercase;
     color: #f59af0;
-    padding: 10px 20px;
+    padding: 2px 15px;
     font-family: sans-serif;
 }
 nav a:hover{
@@ -58,6 +59,9 @@ main{
     border-radius: 0 5px 5px 0;
 }
 .imghide img {
+}
+#myImg1 {
+	display:none;
 }
 .intro{
     width: 600px;
@@ -90,12 +94,25 @@ main img{
     margin: auto;
 }
 .showc {
-margin:20px;
+margin:auto;
+margin-top: 20px;
+margin-bottom: 20px;
     padding: 15px 20px;
 text-transform: uppercase;
     color: #ffffff;
     background-color:#f59af0;
     border-radius: 5px 5px 5px 5px;
+}
+.showx {
+margin:auto;
+margin-top: 20px;
+margin-bottom: 20px;
+    padding: 15px 20px;
+text-transform: uppercase;
+    color: #ffffff;
+    background-color:#f59af0;
+    border-radius: 5px 5px 5px 5px;
+	display:none;
 }
 .contactform{
     width: 900px;
@@ -163,13 +180,13 @@ footer img {
 footer ul{
     list-style:none;
     margin: 0 auto;
-    padding: 20px 200px;
+    padding: 20px 100px;
     background-color:#b60abf40;
     border-radius: 5px 5px 5px 5px;
 } 
 footer li{
     display: inline;
-padding: 20px;
+padding: 10px;
 }
 footer a{
     text-decoration: none;
